@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Barabé Labs | Home Automation & HVAC Integrations</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #0f172a;
+      --muted: #475569;
+      --accent: #1d4ed8;
+      --accent-dark: #1e3a8a;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .hero {
+      padding: 90px 0 70px;
+      background: linear-gradient(120deg, rgba(29, 78, 216, 0.08), rgba(29, 78, 216, 0.02));
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 32px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 3vw, 3.4rem);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin-bottom: 26px;
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(29, 78, 216, 0.2);
+    }
+
+    .hero-card {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+
+    .hero-card ul {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      color: var(--muted);
+    }
+
+    .section {
+      padding: 70px 0;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+    }
+
+    .section p {
+      color: var(--muted);
+      max-width: 720px;
+    }
+
+    .card-grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 32px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .callout {
+      background: var(--accent-dark);
+      color: #fff;
+      border-radius: 18px;
+      padding: 32px;
+      display: grid;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .callout a {
+      display: inline-flex;
+      width: fit-content;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--accent-dark);
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0 40px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">Barabé Labs</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Designing calm, intelligent spaces for modern living.</h1>
+        <p>
+          Barabé Labs builds thoughtful home automation solutions with deep HVAC
+          integrations that improve comfort, efficiency, and control.
+        </p>
+        <a class="cta" href="about.html">Meet Benoît Barabé</a>
+      </div>
+      <div class="hero-card">
+        <h3>Signature Capabilities</h3>
+        <ul>
+          <li>• HVAC system integrations across leading smart platforms.</li>
+          <li>• Custom automation workflows for comfort, air quality, and energy savings.</li>
+          <li>• Secure, privacy-first system architecture for smart homes.</li>
+          <li>• Consultation, design, and post-install optimization services.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="solutions">
+    <div class="container">
+      <h2>Solutions tailored for connected homes</h2>
+      <p>
+        From multi-zone HVAC control to adaptive scenes that learn your routines,
+        Barabé Labs delivers integrated systems that feel effortless while reducing
+        operational costs.
+      </p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>HVAC Intelligence</h3>
+          <p>
+            Multi-system integrations, smart thermostats, and sensor-driven logic
+            for optimal comfort and efficiency.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Whole-Home Automation</h3>
+          <p>
+            Lighting, security, and climate workflows orchestrated from a single
+            control plane.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Energy Optimization</h3>
+          <p>
+            Real-time monitoring, usage insights, and automation strategies that
+            reduce waste without compromising comfort.
+          </p>
+        </div>
+      </div>
+      <div class="callout" id="contact">
+        <h3>Let’s design your ideal living environment.</h3>
+        <p>
+          Reach out to discuss upcoming projects, consulting engagements, or HVAC
+          integration challenges.
+        </p>
+        <a href="about.html">View profile</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2026 Barabé Labs. Crafted for comfort, control, and clarity.
+    </div>
+  </footer>
+</body>
+</html>
